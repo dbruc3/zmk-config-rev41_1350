@@ -75,14 +75,14 @@
 
                 adjust_layer {
 // ------------------------------------------------------------------------------
-// | POWER |     |     |     |     |     |   | BT1 | BT2 | BT3 | BT4 | BT5 | MUTE |
-// |     |     |     |     |     |     |   | BT CLR|    |     |     |     | VOL UP |
-// |     |     |     |     |     |     |   | RESET | BOOT |     |     |     |VOL DN |
+// | POWER |     |     |     |     | BT CLR |   | BT1 | BT2 | BT3 | BT4 | BT5 | MUTE |
+// | BACK  |  F1 | F2  |  F3 | F4  | F5  |			| F6  | F7  | F8  | F9  | F10 | VOL UP |
+// | LOCK  | F11 | F12 |     |     |     |   | RESET | BOOT |     |     |     |VOL DN |
 //                        |     |     |     |     |     |
                         bindings = <
-   &ext_power EP_TOG   &none   &none   &none   &none   &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp K_MUTE
-   &none   &none   &none   &none   &none   &none      &bt BT_CLR        &none        &none        &none        &none        &kp K_VOL_UP
-   &none   &none   &none   &none   &none   &none      &sys_reset       &bootloader        &none        &none        &none        &kp K_VOL_DN
+   &kp K_POWER &none &none &none &none &bt BT_CLR			&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp K_MUTE
+   &kp K_BACK &kp F1 &kp F2 &kp F3 &kp F4 &kp F5      &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp K_VOL_UP
+   &kp K_LOCK &kp F11 &kp F12 &none &none &none				&sys_reset &bootloader &none &none &none &kp K_VOL_DN
                        &trans      &trans       &trans        &trans      &trans
                         >;
                 };
