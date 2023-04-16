@@ -12,8 +12,8 @@
 
 #define DEFAULT 0
 #define LOWER   1
-#define NAVIG   3
-#define ADJST   5
+#define NAVIG   2
+#define ADJST   3
 
 / {
     behaviors {
