@@ -74,14 +74,14 @@
 
                 adjust_layer {
 // ------------------------------------------------------------------------------
-// |     |     |     |     |     |     |   | BT1 | BT2 | BT3 | BT4 | BT5 |BT CLR|
-// |     |     |     |     |     |     |   |     |     |     |     |     |      |
-// |     |     |     |     |     |     |   |RESET|     |     |     |     |      |
+// |     |     |     |     |     |     |   | BT1 | BT2 | BT3 | BT4 | BT5 | MUTE |
+// |     |     |     |     |     |     |   | BT CLR|    |     |     |     | VOL UP |
+// |     |     |     |     |     |     |   |		 |     |     |     |     |VOL DN |
 //                        |     |     |     |     |     |
                         bindings = <
-   &none   &none   &none   &none   &none   &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-   &none   &none   &none   &none   &none   &none      &none        &none        &none        &none        &none        &none
-   &none   &none   &none   &none   &none   &none      &none       &none        &none        &none        &none        &none
+   &none   &none   &none   &none   &none   &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp K_MUTE
+   &none   &none   &none   &none   &none   &none      &bt BT_CLR        &none        &none        &none        &none        &kp K_VOL_UP
+   &none   &none   &none   &none   &none   &none      &none       &none        &none        &none        &none        &kp K_VOL_DN
                        &trans      &trans       &trans        &trans      &trans
                         >;
                 };
