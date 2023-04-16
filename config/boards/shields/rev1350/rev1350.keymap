@@ -47,16 +47,16 @@
                 };
 
                 lower_layer {
-// -----------------------------------------------------------------------------
-// | DEL |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
-// |     |     |     |     |     |     |   |  ~  |  _  |  +  |  {  |  }  | "|" |
-// |     |     | GUI |     |     | CAPS|   | PRSC|     |     |     |     |     |
-//                       |     |     | RET | ADJ |     |
+// ----------------------------------------------------------------------------------
+// | ~  |  !  |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  -  |  =  |  DEL |
+// | `  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |   |  |
+// | (  |     |     |     |  {  |  [  |     |  ]  |  }  |  \  |  _  |  +  |   )  |
+//  
                         bindings = <
-   &kp DEL &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS  &kp ASTRK   &kp LPAR  &kp RPAR  &kp DEL
-   &trans  &trans   &trans   &trans   &trans   &trans         &kp TILDE &kp UNDER &kp KP_PLUS &kp LBRC  &kp RBRC  &kp PIPE
-   &trans  &trans   &kp LGUI &trans   &trans   &kp CLCK       &kp PSCRN &trans    &trans      &trans    &trans    &trans
-                                   &trans    &trans    &kp RET    &mo ADJST    &trans
+	 &kp TILDE &kp EXCL	&kp AT &kp HASH &kp DLLR &kp PRCNT      &kp CARET &kp AMPS &kp STAR &kp MINUS  &kp EQUAL  &kp DEL/
+	 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5								&kp N6  &kp N7 &kp N8    &kp N9 &kp N0 &kp PIPE
+	 &kp LPAR &none &none &none &kp LBRC &kp LBKT								&kp RBKT &kp RBRC &kp BSLH &kp UNDER &kp PLUS &kp RPAR
+													&trans      &trans       &kp SPC        &mo ADJST     &kp RALT
                         >;
                 };
 
