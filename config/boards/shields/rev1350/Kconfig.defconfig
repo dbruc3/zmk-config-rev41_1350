@@ -12,4 +12,7 @@ config ZMK_KEYBOARD_NAME
 config ZMK_BLE_PASSKEY_ENTRY
 		default "y"
 
+config ZMK_BLE_EXPERIMENTAL_FEATURES
+		default "y"
+
 endif
